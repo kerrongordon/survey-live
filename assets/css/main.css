@@ -1,0 +1,87 @@
+/*login screen*/
+.login-page {
+  width: 100%;
+  height: 100vh;
+  background-color: #34495e;
+  background: url(/assets/img/login-bg.jpg) 50% 50%/cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: auto; }
+  .login-page .card {
+    width: 375px;
+    overflow: initial;
+    border-radius: 5px 5px 10px 10px; }
+  .login-page .card .card-image img {
+    height: 200px; }
+  .login-page .is_active {
+    border-bottom: solid #ee6e73; }
+  .login-page .is_under {
+    width: 50%;
+    height: 2px;
+    background: #ee6e73;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s; }
+  .login-page form {
+    padding: 20px;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s; }
+    .login-page form input {
+      margin-bottom: 3vh; }
+  .login-page .preloader-wrapper {
+    position: absolute;
+    left: 3px;
+    top: 4px;
+    z-index: 100; }
+  .login-page .spinner-layer {
+    border-color: #FFFFFF; }
+  .login-page .card-content {
+    overflow: hidden;
+    width: 100%; }
+
+@media (max-width: 600px) {
+  .login-page {
+    background: none; }
+    .login-page .card {
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      overflow: auto; }
+      .login-page .card .card-image img {
+        height: auto; } }
+
+.mdl-shadow--bdp {
+  box-shadow: 0 32px 50px -16px rgba(0, 0, 0, 0.72); }
+
+.pad-5-2 {
+  padding: 50px 20px; }
+
+.tabicon {
+  margin: 15px 10px 0px 0px;
+  display: inline-block;
+  font-size: 15px; }
+
+.hero {
+  background: #2196F3;
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+  .hero .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .hero .content a {
+      margin: 15px 10px; }

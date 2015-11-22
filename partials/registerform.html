@@ -1,0 +1,18 @@
+<form name="regfrm" ng-submit="register.createUserAccount()" class="animated fadeInLeft">
+    <div class="input-field col s12">
+        <input id="register-email" type="email" class="validate" ng-model="register.email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+        <label for="register-email" data-error="Not an Email" data-success="Good">Example@email.com</label>
+    </div>
+    <div class="input-field col s12">
+        <input id="register-password" type="password" name="rpass" class="validate" ng-model="register.pass" minlength="7" ng-required >
+        <label for="register-password">Password</label>
+    </div>
+    <div class="input-field col s12">
+        <input id="confirm_password" type="password" name="rcpass" class="validate" ng-model="register.con_pass" minlength="7" ng-required >
+        <label for="confirm_password">Confirm Password</label>
+    </div>
+    <button class="btn-floating btn-large waves-effect waves-light red" ng-disabled="regfrm.$invalid">
+        <i class="material-icons">send</i>
+        <m-preloader></m-preloader>
+    </button>
+</form>

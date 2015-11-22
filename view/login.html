@@ -1,0 +1,42 @@
+<div class="login-page">
+
+  <div class="card z-depth-5 animated ">
+
+      <div class="card-image">
+        <img src="assets/img/login-fg.jpg"> 
+        <span class="card-title">Welcome</span>
+      </div>
+  
+      <div class="col s12">
+        <m-tabs class="tabs">
+          <li class="tab col s6"><a href="#login" class="waves-effect waves-red" ng-click="$state.go('login')"><i class="material-icons tabicon">account_circle</i>Login</a></li>
+          <li class="tab col s6"><a href="#register" class="waves-effect waves-red" ng-click="$state.go('register')"><i class="material-icons tabicon">assignment_ind</i>register</a></li>
+        </m-tabs>
+        <div class="">
+          <span class="is_under left animated fadeInRight" ng-show="$state.includes('login')"></span>
+          <span class="is_under right animated fadeInLeft" ng-show="$state.includes('register')"></span>
+        </div>
+      </div>
+      
+      <div id="login" class="col s12">
+        <div class="card-content" ng-show="$state.includes('login')">
+
+        	 <login-form ></login-form>
+
+        </div>
+        <div class="card-content" ng-show="$state.includes('register')">
+
+            <register-form></register-form>
+
+        </div>
+            <div class="card-action" ng-show="err">
+                <span class="red-text">Password Did Not Match</span>
+            </div>
+            <div class="card-action" ng-show="regfrm.rpass.$error.minlength">
+                <span class="red-text">Password Must Be At Least 7 Characters Long</span>
+            </div>
+        </div>
+
+  </div>
+
+</div>
